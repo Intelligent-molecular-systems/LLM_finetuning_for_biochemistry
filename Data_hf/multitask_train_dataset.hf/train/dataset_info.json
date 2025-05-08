@@ -1,0 +1,75 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "multitask_train_dataset",
+  "dataset_size": 4863400,
+  "description": "",
+  "download_checksums": {
+    "/Users/ldifruscia/Desktop/vscode/Projects/LLM_PoC/multitask_train_dataset/train.jsonl": {
+      "num_bytes": 4956296,
+      "checksum": null
+    },
+    "/Users/ldifruscia/Desktop/vscode/Projects/LLM_PoC/multitask_train_dataset/validation.jsonl": {
+      "num_bytes": 543650,
+      "checksum": null
+    }
+  },
+  "download_size": 5499946,
+  "features": {
+    "split": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "message": [
+      {
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "other_truths": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 10363346,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 4382880,
+      "num_examples": 5352,
+      "dataset_name": "multitask_train_dataset"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 480520,
+      "num_examples": 595,
+      "dataset_name": "multitask_train_dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

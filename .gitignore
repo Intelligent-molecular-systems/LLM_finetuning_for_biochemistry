@@ -1,0 +1,6 @@
+__pycache__
+.DS_Store
+api_key.txt
+Logs*
+slurm*
+wandb

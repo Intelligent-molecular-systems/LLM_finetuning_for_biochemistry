@@ -1,0 +1,65 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "multitask_test_dataset",
+  "dataset_size": 2027642,
+  "description": "",
+  "download_checksums": {
+    "/Users/ldifruscia/Desktop/vscode/Projects/LLM_PoC/multitask_test_dataset/test.jsonl": {
+      "num_bytes": 2299278,
+      "checksum": null
+    }
+  },
+  "download_size": 2299278,
+  "features": {
+    "split": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "message": [
+      {
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "other_truths": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 4326920,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 2027642,
+      "num_examples": 2549,
+      "dataset_name": "multitask_test_dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
