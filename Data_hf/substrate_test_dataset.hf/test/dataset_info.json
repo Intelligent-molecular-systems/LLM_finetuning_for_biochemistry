@@ -1,0 +1,65 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "substrate_test_dataset",
+  "dataset_size": 757389,
+  "description": "",
+  "download_checksums": {
+    "/Users/ldifruscia/Desktop/vscode/Projects/LLM_PoC/substrate_test_dataset/test.jsonl": {
+      "num_bytes": 846331,
+      "checksum": null
+    }
+  },
+  "download_size": 846331,
+  "features": {
+    "split": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "message": [
+      {
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "other_truths": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1603720,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 757389,
+      "num_examples": 837,
+      "dataset_name": "substrate_test_dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

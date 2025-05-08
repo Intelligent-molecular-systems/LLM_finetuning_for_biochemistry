@@ -1,0 +1,65 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "product_test_dataset",
+  "dataset_size": 674425,
+  "description": "",
+  "download_checksums": {
+    "/Users/ldifruscia/Desktop/vscode/Projects/LLM_PoC/product_test_dataset/test.jsonl": {
+      "num_bytes": 765805,
+      "checksum": null
+    }
+  },
+  "download_size": 765805,
+  "features": {
+    "split": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "message": [
+      {
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "other_truths": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1440230,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 674425,
+      "num_examples": 857,
+      "dataset_name": "product_test_dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

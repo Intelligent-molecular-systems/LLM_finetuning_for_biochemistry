@@ -1,0 +1,32 @@
+name: LLM_4_enzymes_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - huggingface
+  - defaults
+dependencies:
+  - python=3.11.0
+  - pytorch=2.2.0
+  - pytorch-cuda=12.1
+  - torchvision=0.17.0
+  - torchaudio=2.2.0
+  - transformers=4.43.3
+  - datasets=2.18.0
+  - numpy
+  - scikit-learn
+  - plotly
+  - matplotlib
+  - ipython
+  - jupyter
+  - pip
+  - pip:
+    - accelerate==0.33.0
+    - evaluate==0.4.1
+    - bitsandbytes==0.42.0
+    - peft==0.11.1
+    - black
+    - seaborn
+    - trl
+    - wandb
+    - rdkit
