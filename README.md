@@ -3,7 +3,7 @@
 This repository is the official implementation of [Leveraging Large Language Models for enzymatic reaction prediction and characterization](https://www.arxiv.org/abs/2505.05616). 
 
 <p align="center">
-<img width="600" alt="Paper n 1 cover" src="https://github.com/user-attachments/assets/5ec7ce19-f001-4fdb-9afd-61159c711021" />
+<img width="600" alt="Paper n 1 cover" src="https://raw.githubusercontent.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/main/Images/Cover.png" />
 
 
 ## Table of contents
@@ -37,7 +37,7 @@ We make use of a subset originally extracted from the [BRENDA](https://www.brend
 EC class contribution for all the enzymatic reactions is shown below.
 
 <p align="center">
-<img width="550" alt="pie chart" src="https://github.com/user-attachments/assets/1bb7a71c-a6d4-405b-83e7-f294d0dac007/" >
+<img width="550" alt="pie chart" src="https://raw.githubusercontent.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/main/Images/Pie_chart.png" >
 
 
 To produce the dataset used in the paper for training and evaluation, run this command:
@@ -61,8 +61,7 @@ Each enzymatic reaction is transformed into a conversation example with the LLM.
       "role": "assistant",
       "content": "<EC> 1.2.1.81 </EC>"}
 ```
-
-The datasets can be downloaded [here](https://github.com/lorentzDFR/LLM_PoC/Data_hf). 
+The datasets can be downloaded [here](https://github.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/tree/main/Data_hf). 
 
 
 ## Pretrained Models
