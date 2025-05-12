@@ -1,6 +1,6 @@
 # Leveraging Large Language Models for enzymatic reaction prediction and characterization
 
-This repository is the official implementation of [Leveraging Large Language Models for enzymatic reaction prediction and characterization](link_here). 
+This repository is the official implementation of [Leveraging Large Language Models for enzymatic reaction prediction and characterization](https://www.arxiv.org/abs/2505.05616). 
 
 <p align="center">
 <img width="600" alt="Paper n 1 cover" src="https://github.com/user-attachments/assets/5ec7ce19-f001-4fdb-9afd-61159c711021" />
@@ -98,10 +98,10 @@ python Finetuning_llmodel.py --model=$MODEL \
 | `--dataset_path`       | `./ec_prediction_dataset.hf`| Path to the `train_val.hf` dataset                                |                                              |
 | `--lora_directory`     |                             | Directory where the LoRA head is stored                           |                                              |
 | `--rank`               |                             | Rank value for the LoRA head                                      | `16`                                         |
-| `--lora_alpha`         |                             | Head value for the LoRA head                                      | `32`                                         |
+| `--lora_alpha`         |                             | Alpha value for the LoRA head                                     | `32`                                         |
 | `--learning_rate`      |                             | Learning rate used for finetuning                                 | `0.0002`                                     | 
 | `--model_name`         | `"Finetuned_model"`         | Name used to save the finetuned model                             |                                              |
-| `--lora_type`          | `full`                      | Decides how many LoRa layers to involve ('light', 'attn', 'full'  |                                              |
+| `--lora_type`          | `full`                      | Decides how many LoRa layers to involve ('light', 'attn', 'full') |                                              |
 | `--quantized`          |                             | If present, loads the base model in 4-bit                         |                                              |
 
 
@@ -125,7 +125,7 @@ python Inference_llmodel.py --model=$MODEL \
 | `--lora_directory`    |                             | Directory where the LoRA head is stored                                                                   |                                              |
 | `--save_path`         |                             | Directory where to save the evaluation log files                                                          |                                              |
 | `--task`              |                             | Selected task for inference                                                                               |                                              |
-| `--check_other_truths`|                             | Enables the model to look for a prediction match in the whole branching subgroup the reaction belongs to  | `true`                                       |
+| `--check_other_truths`|                             | Enables the model to look for a prediction match in the whole branching subgroup that reaction belongs to | `true`                                       |
 | `--quantized`         |                             | If present, loads the base model in 4-bit                                                                 |                                              |
 
 ## License
