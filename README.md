@@ -1,9 +1,12 @@
 # Leveraging Large Language Models for enzymatic reaction prediction and characterization
 
-This repository is the official implementation of [Leveraging Large Language Models for enzymatic reaction prediction and characterization](https://www.arxiv.org/abs/2505.05616). 
+[![DOI](https://zenodo.org/badge/963812548.svg)](https://doi.org/10.5281/zenodo.17224079)
+
+This repository is the official implementation of [Leveraging Large Language Models for enzymatic reaction prediction and characterization](https://pubs.rsc.org/en/content/articlelanding/2025/dd/d5dd00187k). 
 
 <p align="center">
-<img width="600" alt="Paper n 1 cover" src="https://raw.githubusercontent.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/main/Images/Cover.png" />
+<img width="600" alt="Cover" src="https://raw.githubusercontent.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/main/Images/Cover_readme.png" />
+<!-- <img width="600" alt="Cover" src="./Images/Cover_readme.png" /> -->
 
 
 ## Table of contents
@@ -14,6 +17,7 @@ This repository is the official implementation of [Leveraging Large Language Mod
 - [Pretrained models](#Pretrained-models)
 - [Training and evaluation](#Training-and-evaluation)
 - [License](#License)
+- [Cite us](#Cite-us)
 
 
 ## Abstract
@@ -37,7 +41,14 @@ We make use of a subset originally extracted from the [BRENDA](https://www.brend
 EC class contribution for all the enzymatic reactions is shown below.
 
 <p align="center">
-<img width="550" alt="pie chart" src="https://raw.githubusercontent.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/main/Images/Pie_chart.png" >
+<img width="500" alt="pie chart" src="https://raw.githubusercontent.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/main/Images/Pie_chart.png" >
+
+
+We implement several preprocessing steps: canonicalization of SMILES representations using the RDKit library parsing functions to remove redundant entries, grouping reactions that share the same {product, EC} or {substrate, EC} pair, but differ in the remaining molecule, and avoidance of task-specific leakage. Each reaction group is assigned exclusively to one task and one dataset split (either training or test). By addressing these issues preemptively, we also ensure a consistent random dataset split for both single-task and multitask setups, enabling fair comparisons between the two methodologies.
+
+<p align="center">
+<img width="550" alt="data split" src="https://raw.githubusercontent.com/Intelligent-molecular-systems/LLM_finetuning_for_biochemistry/main/Images/Dataset_split_readme.png" >
+<!-- <img width="700" alt="data split" src="Images/Dataset_split_readme.png" > -->
 
 
 To produce the dataset used in the paper for training and evaluation, run this command:
@@ -130,3 +141,14 @@ python Inference_llmodel.py --model=$MODEL \
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Cite Us
+```
+@article{difruscia2025LLM4enzymes,
+  title={Leveraging large language models for enzymatic reaction prediction and characterization},
+  author={Di Fruscia, Lorenzo and Weber, Jana M.},
+  journal={Digital Discovery},
+  year={2025},
+  publisher={Royal Society of Chemistry}
+}
+```
